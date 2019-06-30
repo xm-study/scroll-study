@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>图片轮播</title>
+	<link rel="stylesheet" type="text/css" href="./css/scroll.css">
+	<style type="text/css">
+		.ad1 {background: url('./images/t1.png') left top/cover no-repeat;}
+		.ad2 {background: url('./images/t2.png') left top/cover no-repeat;}
+		.ad3 {background: url('./images/t3.png') left top/cover no-repeat;}
+		.ad4 {background: url('./images/t4.png') left top/cover no-repeat;}
+		.ad5 {background: url('./images/t5.png') left top/cover no-repeat;}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>简单的图片轮播插件，移动端可滑动切换</h1>
+		<section class="scroll" id="js-scroll">
+			<div class="scrollContainer">
+				<a class="ad1" href="javascript:;"></a>
+				<a class="ad2" href="javascript:;"></a>
+				<a class="ad3" href="javascript:;"></a>
+				<a class="ad4" href="javascript:;"></a>
+				<a class="ad5" href="javascript:;"></a>
+			</div>
+			<ul class="scrollBut"></ul>
+		</section>
+		<hr />
+		<section class="scroll" id="js-scroll-2">
+			<div class="scrollContainer">
+				<a class="ad1" href="javascript:;"></a>
+				<a class="ad2" href="javascript:;"></a>
+				<a class="ad3" href="javascript:;"></a>
+				<a class="ad4" href="javascript:;"></a>
+				<a class="ad5" href="javascript:;"></a>
+			</div>
+			<ul class="scrollBut"></ul>
+		</section>
+	</div>
+</body>
+<script type="text/javascript">
+	
+</script>
+<script src="./js/util.js"></script>
+<script src="./js/scroll.js"></script>
+<script>
+var o = new Scroll('#js-scroll',{time:5000,invoke:2});
+var o2 = new Scroll('#js-scroll-2',{time:5000,touch:false});
+</script>
+</html>

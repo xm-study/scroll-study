@@ -1,0 +1,57 @@
+html,body,div,ul,li {
+	margin: 0;
+	padding: 0;
+	outline:none;
+}
+@media screen and (max-width:414px){
+	.scroll,a{
+		width:100vw;
+	}
+}
+@media screen and (min-width:415px){
+	.scroll,a{
+		width: 400px;
+	}
+}
+
+a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	background-color: white;
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+ul {list-style: none;}
+.scroll,a {
+	height: 230px;
+}
+.scroll {
+	position: relative;
+	margin: 10px auto; 
+	overflow: hidden;
+}
+.scrollContainer {overflow:hidden;}
+.scrollBut {
+	position: absolute;
+	bottom: 5px;
+}
+.scrollBut li {
+	width: 6px;
+	height: 6px;
+	float: left;
+	margin-left: 5px;
+	background-color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition:width .2s ease-in;
+	-moz-transition:width .2s ease-in;
+	transition:width .2s ease-in;
+	cursor: pointer;
+}
+.scrollBut li:hover,.scrollBut li.on {
+	background-color: #007aff;
+}
+.scrollBut li.on{
+	width: 15px;
+}
